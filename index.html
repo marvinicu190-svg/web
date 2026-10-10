@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Portalito | Tienda de Consumo diario</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Encabezado con Carrito Simple -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"> El Portalito</a>
+            <ul class="nav-links">
+                <li><a href="#alimentos">Alimentos</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+                <li><a href="#limpieza">Limpieza</a></li>
+                <li><a href="#cuidado">Cuidado Personal</a></li>
+                <li><a href="#snacks">Snacks</a></li>
+                <li>
+                    <div class="cart-widget" title="Carrito de compras">
+                        🛒 <span id="cart-count">0</span> prods
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero">
+        <h1>Tienda de Consumo diario "El Portalito"</h1>
+        <p>Encuentra productos esenciales para el hogar con la mejor calidad, frescura y un toque sostenible.</p>
+    </section>
+
+    <!-- Contenido de las Secciones y Productos (Precios en Quetzales - Q) -->
+    <main>
+
+        <!-- SECCIÓN 1: Alimentos -->
+        <section id="alimentos" class="category-section">
+            <h2 class="section-title">Alimentos y Despensa</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://latorremx.vtexassets.com/arquivos/ids/166049/151-frontal.jpg?v=639198533672930000" alt="Arroz Blanco" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Arroz Blanco Premium (1kg)</h3>
+                            <div class="product-price">Q19.50</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://d2o812a6k13pkp.cloudfront.net/fit-in/1080x1080/Productos/40009486_0120250903164219.jpg" alt="Aceite de Girasol" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Aceite Vegetal de Girasol (1L)</h3>
+                            <div class="product-price">Q29.99</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHCsuaA6vYi3vYBFEdQSknuAVZ2fvv18bOXg-G2-bzYTRYXnhgT10OBB4&s=10" alt="Frijoles Negros" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Frijoles Negros Seleccionados (900g)</h3>
+                            <div class="product-price">Q16.25</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://walmartgt.vtexassets.com/arquivos/ids/426935/Pasta-larga-Ina-Espaguetti-500gr-1-14498.jpg?v=638366639219900000" alt="Pasta Spaghetti" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Pasta Spaghetti Tradicional (500g)</h3>
+                            <div class="product-price">Q9.50</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: Bebidas -->
+        <section id="bebidas" class="category-section">
+            <h2 class="section-title">Bebidas y Jugos</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=500&q=80" alt="Agua Pura" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Agua Pura Embotellada (600ml)</h3>
+                            <div class="product-price">Q5.00</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWW1U9NcPVCA6qb7V_4NoIuhR5nM58LbzpnLxkI7jQYF7jupxu2MaLjFE&s=10
+                    " alt="Jugo de Naranja" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Jugo Natural de la granja (1L)</h3>
+                            <div class="product-price">Q22.00</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?auto=format&fit=crop&w=500&q=80" alt="Café Molido" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Café Molido de Altura (250g)</h3>
+                            <div class="product-price">Q35.00</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://walmartgt.vtexassets.com/arquivos/ids/444620/Te-Verde-Twinings-10-Unidades-20gr-2-6709.jpg?v=638415130078470000" alt="Té Verde" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Té Verde Orgánico (Caja 10 sobres)</h3>
+                            <div class="product-price">Q24.00</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: Limpieza -->
+        <section id="limpieza" class="category-section">
+            <h2 class="section-title">Limpieza del Hogar</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?auto=format&fit=crop&w=500&q=80" alt="Detergente Líquido" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Detergente Líquido Multiuso (1.5L)</h3>
+                            <div class="product-price">Q32.00</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=500&q=80" alt="Lavaplatos" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Jabón Lavaplatos en Gel (750ml)</h3>
+                            <div class="product-price">Q18.00</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_853744-MLM73555333796_122023-O.webp" alt="Desinfectante" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Desinfectante con Aroma Pino (1L)</h3>
+                            <div class="product-price">Q21.50</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://ferreteriavidri.com/images/items/large/425248.jpg?v=6910" alt="Esponjas" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Set de Esponjas Abrasivas (Paquete de 3)</h3>
+                            <div class="product-price">Q12.00</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: Cuidado Personal -->
+        <section id="cuidado" class="category-section">
+            <h2 class="section-title">Cuidado Personal</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://walmartgt.vtexassets.com/arquivos/ids/976160/jabon-protex-avena-3-pack-225-g-0099176923039.webp?v=639101598139800000" alt="Jabón de Baño" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Jabón de Tocador de Avena (125g)</h3>
+                            <div class="product-price">Q8.50</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://walmartgt.vtexassets.com/arquivos/ids/1017631/shampoo-herbal-essences-brillo-manzanilla-pasiflora-400-ml-0381519180743.jpg?v=639189446153870000" alt="Shampoo" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Shampoo Fortalecedor Herbal (400ml)</h3>
+                            <div class="product-price">Q35.00</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=500&q=80" alt="Crema Corporal" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Crema Hidratante Corporal (300ml)</h3>
+                            <div class="product-price">Q29.99</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://walmartcr.vtexassets.com/arquivos/ids/699825/13372_01.jpg?v=638614971454500000" alt="Pasta Dental" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Pasta Dental Protectora (100ml)</h3>
+                            <div class="product-price">Q15.00</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: Snacks -->
+        <section id="snacks" class="category-section">
+            <h2 class="section-title">Snacks y Golosinas</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=500&q=80" alt="Papas Fritas" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Papas Fritas (150g)</h3>
+                            <div class="product-price">Q14.00</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=500&q=80" alt="Chocolate Oscuro" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Chocolate Oscuro 70% Cacao (100g)</h3>
+                            <div class="product-price">Q19.99</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=500&q=80" alt="Galletas de Avena" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Galletas Integrales de Avena (200g)</h3>
+                            <div class="product-price">Q12.50</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=500&q=80" alt="Mix de Frutos Secos" class="product-image">
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Mix de Frutos Secos y Almendras (150g)</h3>
+                            <div class="product-price">Q27.00</div>
+                        </div>
+                        <button class="btn-buy" onclick="agregarAlCarrito()">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 ConsumoVerde. Todos los derechos reservados. Tienda de consumo masivo.</p>
+    </footer>
+
+    <!-- Script sencillo para hacer interactivo el contador del carrito -->
+    <script>
+        let contadorCarrito = 0;
+        function agregarAlCarrito() {
+            contadorCarrito++;
+            document.getElementById('cart-count').innerText = contadorCarrito;
+        }
+    </script>
+
+</body>
+</html>
